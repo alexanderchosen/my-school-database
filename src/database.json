@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "firstname": "alexander",
+        "lastname": "chosen",
+        "username": "xandacodes",
+        "email": "xandacodes@gmail.com",
+        "grade": "6",
+        "password": "guesswhat123",
+        "dob": "2022-05-06",
+        "gender": "male"
+    },
+    {
+        "id": "2",
+        "firstname": "racheal",
+        "lastname": "ako",
+        "username": "raycodes",
+        "email": "raycodes@gmail.com",
+        "grade": "5",
+        "password": "ihavejoy",
+        "dob": "2020-03-22",
+        "gender": "female"
+    },
+    {
+        "id": "3",
+        "firstname": "Joshua",
+        "lastname": "kings",
+        "username": "salesman",
+        "email": "salesman@gmail.com",
+        "grade": "7",
+        "password": "isellforaliving",
+        "dob": "2017-08-19",
+        "gender": "Male"
+    },
+    {
+        "id": "4",
+        "firstname": "aanu",
+        "lastname": "oluwapo",
+        "username": "semobaddo",
+        "email": "semobaddo@gmail.com",
+        "grade": "3",
+        "password": "semopancakes",
+        "dob": "2024-06-08",
+        "gender": "female"
+    },
+    {
+        "id": "5",
+        "firstname": "abeeb",
+        "lastname": "bello",
+        "username": "shanko",
+        "email": "shanko@gmail.com",
+        "grade": "4",
+        "password": "smallie4life",
+        "dob": "2023-12-25",
+        "gender": "male"
+    }
+]

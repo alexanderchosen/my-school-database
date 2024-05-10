@@ -1,0 +1,9 @@
+button{
+    border: 2px solid goldenrod;
+    border-radius: 15px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.30);
+    font-size: large;
+    font-weight: bold;
+    background-color:darkseagreen;
+    color:darkgrey
+}
