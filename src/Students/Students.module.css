@@ -1,0 +1,117 @@
+.student_details{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: auto;
+}
+
+.school_details{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #cfdadc;
+    margin:0;
+    border-right: 2px solid #83C53F;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    align-items:center;
+    justify-content: center;
+}
+
+.school_details img{
+    height: 70px;
+    margin: 0;
+}
+
+.school_details h3{
+    color:#83C53F;
+    margin: 0;
+    font-weight: 900
+}
+
+.form_display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+}
+
+
+
+.login_form, .signup_form{
+    align-self: center;
+    justify-content: center;
+}
+
+.login_form h3, .signup_form h3{
+    color:#83C53F;
+}
+
+.username, .password{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.name, .email, .grade, .dob, .gender, .user_name, .pass_word{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.username label, .password label, .name label, .email label, .grade label, .dob label, .gender label, .user_name label, .pass_word label{
+    color:#83C53F;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.username input, .password input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #cfdadc;
+}
+
+.name input, .user_name input, .email input, .grade select, .dob input, .gender select, .pass_word input{
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #cfdadc
+}
+
+.submit{
+    padding-top: 10px;
+
+}
+
+.submit Button{
+    font-size: medium;
+}
+
+.submit Button:hover{
+    color:burlywood;
+}
+
+.prompt{
+    font-family:monospace;
+    font-style: italic;
+}
+
+.prompt a{
+    text-decoration: none;
+}
+
+.prompt a:hover{
+    color:burlywood;
+}

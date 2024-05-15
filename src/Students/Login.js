@@ -1,29 +1,27 @@
 import React, { useState } from 'react'
 import Button from './Button'
-import NavBar from '../NavBar/NavBar'
-import Footer from '../Footer/Footer'
+import Card from '../Card'
 import SignUp from './SignUp'
+import styles from './Students.module.css'
 
 const Login = () => {
     const [showSignUp, setShowSignUp]= useState(false)
 
-    const signUphandler = function(){
+    const signUpDivHandler = function(){
         setShowSignUp(true)
     }
 
 if(!showSignUp){
     return (
-        <div>
-            <NavBar />
-            <Card>
-            <div>
+    <Card className={styles.student_details}>
+            <Card className={styles.school_details}>
                 <img src='/images/school-logo.png' alt='logo' />
                 <h3> School Of The Future </h3>
-            </div>
-            <div>
-            <form>
+            </Card>
+            <div className={styles.form_display}>
+            <form className={styles.login_form}>
                 <h3> LOGIN </h3>
-                <div>
+                <div className={styles.username}>
                     <label>Username</label>
                     <input
                     type='text'
@@ -31,34 +29,27 @@ if(!showSignUp){
                     required
                     />
                 </div>
-                <div>
+                <div className={styles.password}>
                     <label>Password</label>
                     <input
                     type='password'
-                    placeholder='unique password'
+                    placeholder='unique password here'
                     required
                     ></input>
                 </div>
-                <div>
+                <div className={styles.submit}>
                     <Button type="Submit" text="LOGIN"></Button>
                 </div>
-                <div>
-                    <p>Don't have a student acoount? <a href='#' onClick={signUphandler} >SignUp</a></p>
+                <div className={styles.prompt}>
+                    <p>Don't have a student account? <a href='#' onClick={signUpDivHandler} >SignUp</a></p>
                 </div>
             </form>
             </div>
-            </Card>
-            <Footer />
-        </div>
+    </Card>
   )
 }
 return(
-    <div>
-        <NavBar/>
         <SignUp />
-        <Footer />
-    </div>
-
 )
 }
 

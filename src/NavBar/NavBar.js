@@ -1,23 +1,21 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
+import Admin from './Admin'
+import Logout from './Logout'
+import styles from './NavBar.module.css'
+
 
 
 const NavBar = () => {
 
-  const adminHandler = function(){
-    // opens the admin page
-  }
   return (
-    <div>
-      <div>
+    <div className={styles.navbar}>
+      <div className={styles.logo}>
         <img src='/images/school-logo.png' alt='logo'/>
         <h3> School Of The Future</h3>
       </div>
-      <div>
-        <a href='#' onClick={adminHandler}>ADMIN</a>
-        <FontAwesomeIcon icon={faSignOutAlt} />
+      <div className={styles.admin_logout}>
+        <Admin />
+        <Logout />
       </div>
     </div>
   )

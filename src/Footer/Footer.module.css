@@ -1,0 +1,28 @@
+.footer{
+    height:auto;
+    background-color: #cfdadc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    border-radius: 10px;
+    border-top: 2px solid goldenrod;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+
+}
+
+.school_name{
+    margin:0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#83C53F;
+    font-size: large;
+    font-weight:900
+}
+
+.copyright{
+    color: #83C53F;
+    font-size:medium;
+    font-weight: bold
+}

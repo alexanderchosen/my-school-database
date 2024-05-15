@@ -2,100 +2,26 @@ import React, { useState } from 'react'
 import Card from '../Card'
 import Button from './Button'
 import Login from "./Login"
-import NavBar from '../NavBar/NavBar'
-import Footer from "../Footer/Footer"
+import styles from "./Students.module.css"
 
 const SignUp = () => {
     const [showLogin, setShowLogin] = useState(false)
 
-    const loginHandler = ()=>{
+    const loginDivHandler = ()=>{
         setShowLogin(true)
     }
 
-//   return (
-//     <Card>
-//         <div>
-//             {/* logo here */}
-//             <h3> School Of The Future </h3>
-//         </div>
-//         <div>
-//             <label>Name</label>
-//             <input
-//             type='text'
-//             placeholder='FirstName LastName'
-//             required
-//             >
-//             </input>
-//             <label>Email</label>
-//             <input
-//             type="email"
-//             placeholder='Email Here'
-//             required
-//             >
-//             </input>
-//             <label>Username</label>
-//             <input
-//             type="text"
-//             placeholder='Preferred Username'
-//             required
-//             >
-//             </input>
-//             <label>Grade level</label>
-//             <select>
-//                 <option value="Grade-1">Grade-1</option>
-//                 <option value="Grade-2">Grade-2</option>
-//                 <option value="Grade-3">Grade-3</option>
-//                 <option value="Grade-4">Grade-4</option>
-//                 <option value="Grade-5">Grade-5</option>
-//                 <option value="Grade-6">Grade-6</option>
-//                 <option value="grade-7">Grade-7</option>
-//             </select>
-//             <label>DOB</label>
-//             <input
-//             type="date"
-//             required
-//             ></input>
-//             <label> Gender</label>
-//             <select>
-//                 <option value="male"></option>
-//                 <option value="female"></option>
-//             </select>
-//             <label>Password</label>
-//             <input
-//             type="password"
-//             placeholder='Unique Password Here'
-//             required
-//             >
-//             </input>
-//             <label>Confirm Password</label>
-//             <input
-//             type="password"
-//             placeholder='Confirm Your Password'
-//             required
-//             >
-//             </input>
-//         </div>
-//         <div>
-//             <Button type="submit" text ="Submit"/>
-//         </div>
-//         <div>
-//             <p>Already have a student account? <a href='#' onClick={loginHandler}>LOGIN</a></p>
-//             {showLogin && <Login />}
-//         </div>
-//     </Card>
-//   )
-
 if (!showLogin){
     return (
-        <div>
-            <NavBar />
-            <Card>
-                <div>
+         <Card className={styles.student_details}>
+                <Card className={styles.school_details}>
                     <img src="/images/school-logo.png" alt="logo"/>
                     <h3> School Of The Future </h3>
-                </div>
-                <div>
-                <form>
+                </Card>
+                <div className={styles.form_display}>
+                <form className={styles.signup_form}>
+                    <h3>SIGN-IN</h3>
+                    <div className={styles.name}>
                     <label>Name</label>
                     <input
                     type='text'
@@ -103,6 +29,8 @@ if (!showLogin){
                     required
                     >
                     </input>
+                    </div>
+                    <div className={styles.email}>
                     <label>Email</label>
                     <input
                     type="email"
@@ -110,13 +38,17 @@ if (!showLogin){
                     required
                     >
                     </input>
+                    </div>
+                    <div className={styles.user_name}>
                     <label>Username</label>
                     <input
                     type="text"
-                    placeholder='Preferred Username'
+                    placeholder='Preferred Username here'
                     required
                     >
                     </input>
+                    </div>
+                    <div className={styles.grade}>
                     <label>Grade level</label>
                     <select>
                         <option value="Grade-1">Grade-1</option>
@@ -127,16 +59,22 @@ if (!showLogin){
                         <option value="Grade-6">Grade-6</option>
                         <option value="grade-7">Grade-7</option>
                     </select>
+                    </div>
+                    <div className={styles.dob}>
                     <label>DOB</label>
                     <input
                     type="date"
                     required
                     ></input>
+                    </div>
+                    <div className={styles.gender}>
                     <label> Gender</label>
                     <select>
-                        <option value="male"></option>
-                        <option value="female"></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
                     </select>
+                    </div>
+                    <div className={styles.pass_word}>
                     <label>Password</label>
                     <input
                     type="password"
@@ -144,6 +82,8 @@ if (!showLogin){
                     required
                     >
                     </input>
+                    </div>
+                    <div className={styles.pass_word}>
                     <label>Confirm Password</label>
                     <input
                     type="password"
@@ -151,25 +91,22 @@ if (!showLogin){
                     required
                     >
                     </input>
-                    <div>
+                    </div>
+                    <div className={styles.submit}>
                     <Button type="submit" text ="SIGN-UP"/>
                     </div>
-                    <div>
-                    <p>Already have a student account? <a href='#' onClick={loginHandler}>LOGIN</a></p>
+                    <div className={styles.prompt}>
+                    <p>Already have a student account? <a href='#' onClick={loginDivHandler}>Login</a></p>
                     </div>
                 </form>
                 </div>
             </Card>
-            <Footer/>
-        </div>
     )
 }
 
 return(
     <div>
-        <NavBar />
         <Login />
-        <Footer />
     </div>
 )
 }

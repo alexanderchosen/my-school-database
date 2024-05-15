@@ -4,6 +4,9 @@ button{
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.30);
     font-size: large;
     font-weight: bold;
-    background-color:darkseagreen;
-    color:darkgrey
+    background-color:#cfdadc;
+    color:#83C53F;
+    padding:10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
 }
