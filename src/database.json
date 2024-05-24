@@ -1,8 +1,7 @@
 [
     {
         "id": "1",
-        "firstname": "alexander",
-        "lastname": "chosen",
+        "name": "alexander chosen",
         "username": "xandacodes",
         "email": "xandacodes@gmail.com",
         "grade": "6",
@@ -12,8 +11,7 @@
     },
     {
         "id": "2",
-        "firstname": "racheal",
-        "lastname": "ako",
+        "name": "racheal ako",
         "username": "raycodes",
         "email": "raycodes@gmail.com",
         "grade": "5",
@@ -23,8 +21,7 @@
     },
     {
         "id": "3",
-        "firstname": "Joshua",
-        "lastname": "kings",
+        "name": "Joshua kings",
         "username": "salesman",
         "email": "salesman@gmail.com",
         "grade": "7",
@@ -34,8 +31,7 @@
     },
     {
         "id": "4",
-        "firstname": "aanu",
-        "lastname": "oluwapo",
+        "name": "aanu oluwapo",
         "username": "semobaddo",
         "email": "semobaddo@gmail.com",
         "grade": "3",
@@ -45,8 +41,7 @@
     },
     {
         "id": "5",
-        "firstname": "abeeb",
-        "lastname": "bello",
+        "name": "abeeb bello",
         "username": "shanko",
         "email": "shanko@gmail.com",
         "grade": "4",

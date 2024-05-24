@@ -1,11 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import SignUp from './SignUp'
 
 
-const StudentEntry = (props) => {
+const StudentEntry = () => {
+  const [studentProfile, setStudentProfile] = useState('')
+
+  // const displayStudentProfile = ()
   return (
     <div>
-      <SignUp/>
+      <SignUp student={[]} />
     </div>
   )
 }

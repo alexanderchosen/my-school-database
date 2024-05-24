@@ -1,7 +1,7 @@
 import Card from '../Card'
 import styles from './Students.module.css'
 
-const Profile = function(){
+const Profile = function(props){
 
     return(
         <Card className={styles.student_details}>
@@ -15,27 +15,17 @@ const Profile = function(){
                     <h5>Welcome,</h5>
                     <p> Below are your profile details:</p>
                 </div>
-                <div className={styles.fullname}>
-                    <label>Full Name:</label>
-                    <input
-                    type='text'
-                    value=''
-                    ></input>
-                </div>
-                <div className={styles.mail}>
-                    <label>Email:</label>
-                    <input
-                    type="email"
-                    value=''
-                    >
-                    </input>
-                </div>
-                <div className={styles.display_password}>
-                <label>Password:</label>
-                <input
-                type='text'
-                value=''>
-                </input>
+                <div>
+                    <ul>
+                        <li>
+                            <p><label>Full Name:</label> {props.student.name}</p>
+                            <p><label> Username:</label> {props.student.username}</p>
+                            <p><label> Email:</label> {props.student.email}</p>
+                            <p><label> Gender:</label> {props.student.gender}</p>
+                            <p><label> Grade:</label> {props.student.grade}</p>
+                            <p> <label> Password:</label> {props.student.password}</p>
+                        </li>
+                    </ul>
                 </div>
                 <div className={styles.prompt}>
                     <p> Thanks for Choosing the Future School!</p>

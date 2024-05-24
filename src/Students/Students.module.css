@@ -1,6 +1,6 @@
 .student_details{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     /* align-items: center; */
     /* justify-content: center; */
     width: 60%;
